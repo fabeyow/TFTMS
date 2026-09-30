@@ -44,4 +44,4 @@ INSERT INTO tasks (title, status, task_date, created_at) VALUES
 -- Seed: 1 demo user record
 -- -----------------------------------------------------------
 INSERT INTO users (username, full_name, email, created_at) VALUES
-('fabeyow', 'Fabeyow', 'fabeyow@example.com', NOW());
+('jisantiago', 'Joaquin Santiago', 'jisantiago@fit.edu.ph', NOW());
