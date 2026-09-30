@@ -8,8 +8,8 @@
     <div class="dev-avatar">
         <i class="fas fa-code"></i>
     </div>
-    <h2>Fabeyow</h2>
-    <div class="subtitle">Senior Developer</div>
+    <h2>Joaquin Santiago</h2>
+    <div class="subtitle">Developer</div>
     <p>
         I designed and built the <strong>Tasks for Today Management System (TFTMS)</strong>
         as a laboratory activity to demonstrate full-stack web development using the
