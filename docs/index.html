@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tasks for Today Management System – Stay organized with daily task tracking.">
+    <title>Welcome – Tasks for Today | TFTMS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glow-top"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="navbar-brand">
+                <i class="fas fa-bolt"></i>
+                TFTMS
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><i class="fas fa-house"></i> Welcome</a></li>
+                <li><a href="tasks.html"><i class="fas fa-list-check"></i> Tasks</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="about.html"><i class="fas fa-circle-info"></i> About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content animate-in">
+
+        <!-- Welcome Page – Today's Tasks -->
+        <div class="page-header">
+            <h1><i class="fas fa-sun"></i> Tasks for Today</h1>
+            <p id="today-date"></p>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-row">
+            <div class="stat-card">
+                <div class="stat-icon purple"><i class="fas fa-clipboard-list"></i></div>
+                <div>
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Total Today</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon amber"><i class="fas fa-hourglass-half"></i></div>
+                <div>
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Pending</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon cyan"><i class="fas fa-circle-check"></i></div>
+                <div>
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">Completed</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Task Table -->
+        <div class="card">
+            <table class="task-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>Status</th>
+                        <th>Created</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Complete CI4 project setup</td>
+                        <td>
+                            <span class="badge badge-completed">
+                                <i class="fas fa-check"></i> completed
+                            </span>
+                        </td>
+                        <td>11:09 AM</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Write unit tests for TaskModel</td>
+                        <td>
+                            <span class="badge badge-pending">
+                                <i class="fas fa-clock"></i> pending
+                            </span>
+                        </td>
+                        <td>11:09 AM</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Review pull request #42</td>
+                        <td>
+                            <span class="badge badge-pending">
+                                <i class="fas fa-clock"></i> pending
+                            </span>
+                        </td>
+                        <td>11:09 AM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        &copy; 2026 Tasks for Today Management System &mdash; Built with CodeIgniter 4
+    </footer>
+
+    <script>
+        const d = new Date();
+        const opts = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('today-date').textContent = d.toLocaleDateString('en-US', opts);
+    </script>
+</body>
+</html>

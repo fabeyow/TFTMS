@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tasks for Today Management System – Complete task history.">
+    <title>All Tasks | TFTMS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glow-top"></div>
+
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="navbar-brand">
+                <i class="fas fa-bolt"></i>
+                TFTMS
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-house"></i> Welcome</a></li>
+                <li><a href="tasks.html" class="active"><i class="fas fa-list-check"></i> Tasks</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="about.html"><i class="fas fa-circle-info"></i> About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content animate-in">
+
+        <div class="page-header">
+            <h1><i class="fas fa-list-check"></i> All Tasks</h1>
+            <p>Complete task history, ordered by date.</p>
+        </div>
+
+        <div class="card">
+            <table class="task-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                        <th>Created</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Complete CI4 project setup</td>
+                        <td><span class="badge badge-completed"><i class="fas fa-check"></i> completed</span></td>
+                        <td>Sep 30, 2026</td>
+                        <td>Sep 30, 2026 11:09 AM</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Write unit tests for TaskModel</td>
+                        <td><span class="badge badge-pending"><i class="fas fa-clock"></i> pending</span></td>
+                        <td>Sep 30, 2026</td>
+                        <td>Sep 30, 2026 11:09 AM</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Review pull request #42</td>
+                        <td><span class="badge badge-pending"><i class="fas fa-clock"></i> pending</span></td>
+                        <td>Sep 30, 2026</td>
+                        <td>Sep 30, 2026 11:09 AM</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Deploy staging server</td>
+                        <td><span class="badge badge-completed"><i class="fas fa-check"></i> completed</span></td>
+                        <td>Sep 29, 2026</td>
+                        <td>Sep 30, 2026 11:09 AM</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Fix login page CSS bug</td>
+                        <td><span class="badge badge-pending"><i class="fas fa-clock"></i> pending</span></td>
+                        <td>Sep 29, 2026</td>
+                        <td>Sep 30, 2026 11:09 AM</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Database schema migration</td>
+                        <td><span class="badge badge-completed"><i class="fas fa-check"></i> completed</span></td>
+                        <td>Sep 27, 2026</td>
+                        <td>Sep 30, 2026 11:09 AM</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Team standup meeting notes</td>
+                        <td><span class="badge badge-completed"><i class="fas fa-check"></i> completed</span></td>
+                        <td>Sep 27, 2026</td>
+                        <td>Sep 30, 2026 11:09 AM</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Prepare sprint retrospective</td>
+                        <td><span class="badge badge-pending"><i class="fas fa-clock"></i> pending</span></td>
+                        <td>Sep 25, 2026</td>
+                        <td>Sep 30, 2026 11:09 AM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        &copy; 2026 Tasks for Today Management System &mdash; Built with CodeIgniter 4
+    </footer>
+</body>
+</html>
